@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RotaCerta - App de Gestão de Fretes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Página Inicial -->
+    <header>
+        <div class="logo-container">
+            <img src="img/logo.webp" alt="Logo RotaCerta"> <!-- Logo -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#motoristas">Cadastro Motoristas</a></li>
+                <li><a href="#clientes">Cadastro Clientes</a></li>
+                <li><a href="#fretes">Fretes Disponíveis</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    
+
+    <section id="home">
+        <h1>Bem-vindo ao RotaCerta</h1>
+        <p>O aplicativo que conecta motoristas e clientes para transporte de cargas de forma eficiente e segura.</p>
+        <a href="#motoristas" class="cta-button">Cadastrar Motorista</a>
+        <a href="#clientes" class="cta-button">Cadastrar Cliente</a>
+    </section>
+
+    <!-- Cadastro de Motoristas -->
+    <section id="motoristas">
+        <h2>Cadastro de Motoristas</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="veiculo">Tipo de Veículo:</label>
+            <input type="text" id="veiculo" name="veiculo" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </section>
+
+    <!-- Cadastro de Clientes -->
+    <section id="clientes">
+        <h2>Cadastro de Clientes</h2>
+        <form>
+            <label for="empresa">Nome da Empresa:</label>
+            <input type="text" id="empresa" name="empresa" required>
+
+            <label for="carga">Tipo de Carga:</label>
+            <input type="text" id="carga" name="carga" required>
+
+            <label for="destino">Destino:</label>
+            <input type="text" id="destino" name="destino" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </section>
+
+    <!-- Página de Fretes Disponíveis -->
+    <section id="fretes">
+        <h2>Fretes Disponíveis</h2>
+        <div class="frete-list">
+            <!-- Simulação de Fretes -->
+            <div class="frete">
+                <p><strong>Frete 1</strong></p>
+                <p>Origem: São Paulo | Destino: Rio de Janeiro</p>
+                <button>Interessado</button>
+            </div>
+            <div class="frete">
+                <p><strong>Frete 2</strong></p>
+                <p>Origem: Belo Horizonte | Destino: Vitória</p>
+                <button>Interessado</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="rastreamento">
+        <h2>Rastreamento em Tempo Real</h2>
+        <p>Acompanhe sua localização em tempo real:</p>
+        <button id="iniciarRastreamento">Iniciar Rastreamento</button>
+        <button id="pararRastreamento">Parar Rastreamento</button>
+        <p id="mensagem"></p>
+        <div id="mapa" style="width: 100%; height: 400px;"></div>
+    </section>
+    
+    <!-- Página de Contato -->
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form>
+            <label for="nome-contato">Nome:</label>
+            <input type="text" id="nome-contato" name="nome-contato" required>
+
+            <label for="email-contato">E-mail:</label>
+            <input type="email" id="email-contato" name="email-contato" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 RotaCerta. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
